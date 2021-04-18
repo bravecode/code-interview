@@ -7,11 +7,16 @@ export interface UsersTableItemProps {
 
 const UsersTableItem: React.FC<UsersTableItemProps> = ({ data }) => {
     return (
-        <div className="user">
-            { data.name }
-            <span className="user__username">
+        <div className="users__item user">
+            <div className="user__id">
+                { data.ID }.
+            </div>
+            <div className="user__name">
+                { data.name }
+            </div>
+            <div className="user__username">
                 @{ data.username }
-            </span>
+            </div>
         </div>
     );
 }
