@@ -1,5 +1,66 @@
 @import '../../assets/scss/variables';
+@import '../../assets/scss/helpers';
 
 .page-users {
     padding: $outer-padding;
+
+    .users {
+        .users-header {
+            margin: 0 0 20px 0;
+
+            &__title {
+                font-size: size(24);
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        .users-search {
+            width: 220px;
+
+            position: relative;
+
+            &__input,
+            &__reset {
+                height: 30px;
+            }
+
+            &__input {
+                width: 100%;
+                background: $palette-grayscale-0;
+                border: 1px solid $palette-grayscale-3;
+                padding: 0 10px;
+
+                &:focus {
+                    border-radius: 0;
+                    outline: none;
+                    border: 1px solid $palette-highlight;
+                }
+            }
+
+            &__reset {
+                width: 30px;
+                background: none;
+                border: none;
+                outline: none;
+                color: $palette-grayscale-2;
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &__item {
+            
+        }
+    }
 }
