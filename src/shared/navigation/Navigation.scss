@@ -12,12 +12,35 @@
 
     .navigation-logo {
         height: 60px;
-        width: 60px;
-        background: $palette-grayscale-3;
 
         display: flex;
         align-items: center;
-        justify-content: center;
+
+        &__icon {
+            height: 60px;
+            width: 60px;
+            background: $palette-grayscale-3;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__content {
+            padding: 0 10px;
+
+            & > div {
+                &:nth-child(1) {
+                    font-size: size(14);
+                    font-weight: $font-weight-bold;
+                    margin: 0 0 5px 0;
+                }
+
+                &:nth-child(2) {
+                    font-size: size(10);
+                }
+            }
+        }
     }
 
     .navigation-menu {
