@@ -1,5 +1,30 @@
 @import '../../assets/scss/variables';
+@import '../../assets/scss/helpers';
 
 .page-home {
     padding: $outer-padding;
+
+    .improvements {
+        margin: 0 0 40px 0;
+
+        .improvements-header {
+            margin: 0 0 20px 0;
+
+            &__title {
+                font-size: size(18);
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        .improvements-list {
+            &__item {
+                margin: 0 0 10px 0;
+                list-style-type: square;
+
+                font-size: size(14);
+                line-height: 1.2;
+                font-weight: $font-weight-regular;
+            }
+        }
+    }
 }
