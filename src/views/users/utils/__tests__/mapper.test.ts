@@ -5,13 +5,13 @@ describe(prepareUser.name, () => {
         expect(
             prepareUser({
             id: 23,
-            name: 'John Doe',
-            username: 'johndoe'
+            name: 'Orlando Bloom',
+            username: 'Legolas'
             }
         )).toEqual({
             ID: 23,
-            name: 'John Doe',
-            username: 'johndoe'
+            name: 'Orlando Bloom',
+            username: 'Legolas'
         });
     });
 });

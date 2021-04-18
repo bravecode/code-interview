@@ -7,8 +7,8 @@ describe(UsersTableItem.name, () => {
         const props: UsersTableItemProps = {
             data: {
                 ID: 10,
-                name: 'John Doe',
-                username: '@johnnybravo'
+                name: 'Elijah Wood',
+                username: '@Frodo'
             }
         }
 
@@ -17,7 +17,7 @@ describe(UsersTableItem.name, () => {
 
         // Assert
         expect(wrapper.findWhere((el) => el.text() === '10.').exists()).toBe(true);
-        expect(wrapper.findWhere((el) => el.text() === 'John Doe').exists()).toBe(true);
-        expect(wrapper.findWhere((el) => el.text() === '@johnnybravo').exists()).toBe(true);
+        expect(wrapper.findWhere((el) => el.text() === 'Elijah Wood').exists()).toBe(true);
+        expect(wrapper.findWhere((el) => el.text() === '@Frodo').exists()).toBe(true);
     });
 });

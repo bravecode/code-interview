@@ -10,13 +10,13 @@ describe(UsersTable.name, () => {
             data: [
                 {
                     ID: 1,
-                    name: 'John Doe',
-                    username: '@johndoe'
+                    name: 'Viggo Mortensen',
+                    username: '@Aragorn'
                 },
                 {
                     ID: 2,
-                    name: 'Johnny Bravo',
-                    username: '@johnnybravo'
+                    name: 'Ian McKellen',
+                    username: '@Gandalf'
                 }
             ]
         }
@@ -37,23 +37,23 @@ describe(UsersTable.name, () => {
                 data: [
                     {
                         ID: 1,
-                        name: 'John Doe',
-                        username: '@johndoe'
+                        name: 'Viggo Mortensen',
+                        username: '@Aragorn'
                     },
                     {
                         ID: 2,
-                        name: 'Johnny Bravo',
-                        username: '@johnnybravo'
+                        name: 'Ian McKellen',
+                        username: '@Gandalf'
                     }
                 ]
             }
 
             // Act
             const wrapper = shallow(<UsersTable {...props} />);
-            wrapper.find(UsersTableSearch).prop('onValueChange')('Bravo');
+            wrapper.find(UsersTableSearch).prop('onValueChange')('Ian');
 
             // Assert
-            expect(wrapper.find(UsersTableSearch).prop('value')).toBe('Bravo');
+            expect(wrapper.find(UsersTableSearch).prop('value')).toBe('Ian');
             expect(wrapper.find(UsersTableItem).length).toBe(1);
             expect(wrapper.find(UsersTableItem).prop('data')).toEqual(props.data![1]);
         });
