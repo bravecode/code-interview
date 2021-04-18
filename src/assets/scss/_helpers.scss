@@ -1,0 +1,5 @@
+@import './variables';
+
+@function size($value, $size: $base-font-size) {
+    @return ($value / $size) * 1rem;
+}

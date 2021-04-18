@@ -1,0 +1,14 @@
+@import './reset';
+@import './variables';
+
+html, body {
+    background: $palette-grayscale-0;
+    
+    font-family: $font-default;
+    font-weight: $font-weight-regular;
+    color: $palette-grayscale-3;
+}
+
+* {
+    box-sizing: border-box;
+}

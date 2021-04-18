@@ -1,0 +1,57 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/helpers';
+
+.navigation {
+    height: 80px;
+    width: 100%;
+    padding: 0 $outer-padding;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navigation-logo {
+        height: 60px;
+        width: 60px;
+        background: $palette-grayscale-3;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation-menu {
+        list-style-type: none;
+
+        display: flex;
+        align-items: center;
+
+        &__item {
+            margin: 0 40px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        .navigation-item {
+            &__anchor {
+                text-decoration: none;
+                cursor: pointer;
+
+                font-size: size(14);
+                font-weight: $font-weight-bold;
+                color: inherit;
+
+                &:hover {
+                    color: $palette-highlight;
+                    cursor: pointer;
+                }
+            
+                &.--active {
+                    color: $palette-highlight;
+                }
+            }
+        }
+    }
+}

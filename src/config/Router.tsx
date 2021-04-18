@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import '../assets/scss/global.scss';
 
 // Templates
 import { DefaultTemplate } from '../templates/default/DefaultTemplate';
