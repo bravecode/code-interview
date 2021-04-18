@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './Home.scss';
 
 const Home: React.FC = () => {
     return (
         <div className="page-home">
+
+            <Helmet>
+                <title>Interview | Home</title>
+            </Helmet>
             
             <section className="improvements">
                 <header className="improvements-header">
@@ -33,6 +38,9 @@ const Home: React.FC = () => {
                     </li>
                     <li className="improvements-list__item">
                         "Loading..." text could be replaced with some fancy animation (UX).
+                    </li>
+                    <li className="improvements-list__item">
+                        Clean Up static data (react logo, styles, readme).
                     </li>
                 </ul>
             </section>

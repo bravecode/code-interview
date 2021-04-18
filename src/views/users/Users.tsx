@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { UsersTable } from './components/UsersTable';
 import { User } from './types/User.interface';
 import './Users.scss';
@@ -28,6 +29,10 @@ const Users: React.FC<UsersProps> = ({
     
     return (
         <div className="page-users">
+
+            <Helmet>
+                <title>Interview | Users</title>
+            </Helmet>
             
             <UsersTable data={users} />
 
